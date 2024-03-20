@@ -1,0 +1,31 @@
+{
+  "name": "project-name-here",
+  "version": "0.0.1",
+  "description": "project description here",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepare": "node preinstall.js --max-old-space-size=10M",
+    "lint": "xo *.{ts,js,jsx,tsx} --fix",
+    "build": "tsup",
+    "hook": "node hook.js --max-old-space-size=50M"
+  },
+  "type": "module",
+  "keywords": [
+    "project keywords"
+  ],
+  "author": {
+    "name": "Hanif Dwy Putra S",
+    "email": "hanifdwyputrasembiring@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/core": "^1.4.8",
+    "@types/node": "^20.11.30",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "is-git-dirty": "^2.0.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2",
+    "xo": "^0.58.0"
+  }
+}
